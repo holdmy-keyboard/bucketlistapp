@@ -7,15 +7,21 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ampx:sandbox": "npx -y node@22 node_modules/@aws-amplify/backend-cli/lib/ampx.js sandbox",
+    "postinstall": "node scripts/patch-typescript-vfs.mjs"
+  },
+  "engines": {
+    "node": ">=20 <25"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^6.15.0",
     "aws-amplify": "^6.16.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@aws-amplify/backend": "^1.21.0",
+    "@aws-amplify/backend": "^1.2.1",
     "@aws-amplify/backend-cli": "^1.8.2",
     "@eslint/js": "^9.39.1",
     "@types/react": "^19.2.7",

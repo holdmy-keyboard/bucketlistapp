@@ -179,12 +179,15 @@ defineBackend({
 ## Step 2.5: Deploy the Backend to an Amplify Sandbox
 1. From the project root, start the sandbox:
 ``` bash
-npx ampx sndbox
+npm run ampx:sandbox
 ```
 
 2. After deployment completes:
 - You'll see a success message
 - Amplify generate `amplify_outputs.json` in your project
+
+Node note:
+- AMPX in this project should be run on Node 20/22/24 (Node 25 can throw `localStorage.getItem is not a function`).
 
 
 ### Common AWS Credentials Error

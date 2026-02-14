@@ -1,5 +1,6 @@
 import { type ClientSchema, a, defineData } from '@aws-amplify/backend';
 
+
 const schema = a.schema({
   BucketItem: a
     .model({
