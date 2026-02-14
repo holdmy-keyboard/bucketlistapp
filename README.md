@@ -249,3 +249,19 @@ git push origin main
 3. Amplify will automatically trigger a new build + deployment after every psuh to `main`.
 4. CLick **Vist deployed URL** to view the live app on your `*.amplifyapp.com` domain.
 
+
+## Step 4: Conclusion
+A full-stack **Bucket List Tracker** and deployed it on **AWS Amplify** with:
+- **Authentication** (email sign-up + verification)
+- **GraphQL + DynamoDB** for per-user data
+- **S3 storage** for optional image uploads
+- **CI/CD via GitHub** with automatic deployments.
+
+### What's Next:
+- Upgrade the UI/UX (filters, edit flow, item status, better layout)
+- Register and connect a custom domain
+
+### Clean-up (Delete Resources)
+1. Open **AWS Console** -> **Amplify** -> select `bucketlistapp`
+2. Go to **App settings** -> **General settings**
+3. Click **Delete app**
